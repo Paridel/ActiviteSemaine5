@@ -1,0 +1,35 @@
+{
+    "name": "activite5",
+    "short_name": "activite5",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Toujours dans l'optique d'ameliorer le projet de l'activite 4. L’objectif de cette activité est de vous familiariser avec la création d’une application Flutter de gestion de données, en mettant l’accent sur les opérations CRUD (Create, Read, Update, Delete). Il s’agit essentiellement de maitriser la gestion des données via la bibliothèque sqflite pour gérer une base de données SQL Lite.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
