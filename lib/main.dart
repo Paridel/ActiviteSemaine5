@@ -10,6 +10,7 @@ void main() {
 }
 
 class MonApplication extends StatelessWidget {
+
   final DatabaseManager dbManager = DatabaseManager();
 
   MonApplication({super.key});
@@ -25,6 +26,7 @@ class MonApplication extends StatelessWidget {
       home: PageAccueil(),
     );
   }
+
 }
 
 class PageAccueil extends StatelessWidget {
@@ -251,6 +253,7 @@ class PartieTexte extends StatelessWidget {
 }
 
 class PartieIcone extends StatelessWidget {
+
   const PartieIcone({super.key});
 
   @override
@@ -496,15 +499,17 @@ class MySearchDelegate extends SearchDelegate {
 
 
 class RedacteurInterface extends StatefulWidget {
+
   final DatabaseManager dbManager = DatabaseManager();
 
   RedacteurInterface({super.key});
 
   @override
-  State<RedacteurInterface> createState() => _RedacteurInterfaceState();
+  State<RedacteurInterface> createState() => RedacteurInterfaceState();
+
 }
 
-class _RedacteurInterfaceState extends State<RedacteurInterface> {
+class RedacteurInterfaceState extends State<RedacteurInterface> {
 
   final TextEditingController nomController = TextEditingController();
   final TextEditingController prenomController = TextEditingController();
@@ -796,7 +801,7 @@ class _RedacteurInterfaceState extends State<RedacteurInterface> {
             ),
             const SizedBox(height: 10),
 
-            // Message d'erreur
+
             if (errorMessage.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
